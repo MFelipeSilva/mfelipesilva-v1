@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="167.38014"
+   height="167.38008"
+   viewBox="0 0 44.285995 44.28598"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="imgcontainer.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6588">
+      <stop
+         style="stop-color:#eec643;stop-opacity:1;"
+         offset="0"
+         id="stop6584" />
+      <stop
+         style="stop-color:#d0a10e;stop-opacity:1;"
+         offset="0.84637684"
+         id="stop6586" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6562"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#eec643;stop-opacity:1;"
+         offset="0"
+         id="stop6560" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6588"
+       id="linearGradient6590"
+       x1="229.33807"
+       y1="146.56549"
+       x2="273.62405"
+       y2="146.56549"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-229.33806,-124.4225)">
+    <circle
+       style="fill:url(#linearGradient6590);fill-opacity:1;stroke:none;stroke-width:0.765"
+       id="path2242"
+       cx="251.48106"
+       cy="146.56549"
+       r="22.14299" />
+  </g>
+</svg>
