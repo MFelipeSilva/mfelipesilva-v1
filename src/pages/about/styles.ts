@@ -30,6 +30,7 @@ export const CardCompartiment = styled.div`
   @media (max-width: 768px) {
     height: 100%;
     width: 95%;
+    padding-bottom: 60px;
     left: unset;
   }
 `;
