@@ -28,10 +28,13 @@ export const CardCompartiment = styled.div`
   background-color: #232323;
 
   @media (max-width: 768px) {
-    height: 100%;
+    height: 90%;
     width: 95%;
-    padding-bottom: 60px;
     left: unset;
+  };
+
+  @media (max-height: 700px) {
+    height: 700px
   }
 `;
 
