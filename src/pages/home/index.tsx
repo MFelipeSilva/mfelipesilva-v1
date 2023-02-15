@@ -1,6 +1,6 @@
 import React from "react";
 import formato from "../../assets/formatogeometrico.svg";
-import { Container, ContentHeader, Img , Section, Footer } from "./styles";
+import { Container, ContentHeader, Link,Img , Section, Footer } from "./styles";
 
 import { Button } from "../../components/Button";
 import { TitleHome } from "../../components/Title";
@@ -16,8 +16,10 @@ export const Home = () => {
     <Container id="/">
       <ContentHeader>
         <TitleHome />
-
-        <Button label="Currículo </>"></Button>
+        <Link href="https://docs.google.com/document/d/1PxtUB_zr9HdKgKtfJmLff-DmJcnKzedJ/edit?usp=share_link&ouid=109897942175443130890&rtpof=true&sd=true">
+          <Button label="Currículo </>"></Button>
+        </Link>
+        
 
   
         <Img src={formato}></Img>
@@ -40,7 +42,7 @@ export const Home = () => {
       </Section>
 
       <Footer>
-        © Site desenvolido por mutadofs · 2023 
+        © Site desenvolvido por mutadofs · 2023 
       </Footer>
     </Container>
   );

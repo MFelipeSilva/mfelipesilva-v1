@@ -1,19 +1,21 @@
-import { TitleDefault } from "../../components/Title";
-import image from '../../assets/image.webp'
+
+import myface from '../../assets/myface.webp'
+import { TitleDefaulted } from "../../components/Title";
 import { Container, CardCompartiment, Text, TextCard, Img, Content } from "./styles";
 
 export const About = () =>  {
   return (
     <Container id="sobre">
-      <TitleDefault text='Sobre mim'/>  
+      <TitleDefaulted text='Sobre mim'/>  
       
-
+        
       <Content>
         <CardCompartiment>
         </CardCompartiment>
 
+
         <TextCard>
-          <Img src={image} alt="image"></Img>
+          <Img src={myface} alt="image"></Img>
 
           <Text>
             Olá, sou conhecido como mutadofs, tenho 16 anos de idade, e estou estudando para ser um desenvolvedor Fullstack,

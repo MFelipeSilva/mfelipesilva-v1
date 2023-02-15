@@ -8,19 +8,25 @@ type PropsSize = {
 
 export const Container = styled.section`
   display: flex;
-  height: 150vh;
+  height: 1020px;
   text-align: center;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media (max-width: 640px) {
+    height: 1500px;
+    justify-content: center;
+  }
 `;
 
 export const CardContent = styled.div`
   display: flex;
-  width: 100%;
+  width: 100vw;
   flex-wrap: wrap;
   margin-top: 70px;
   justify-content: space-around;
+  
 `;
 
 export const CardCustom = styled(Card)`

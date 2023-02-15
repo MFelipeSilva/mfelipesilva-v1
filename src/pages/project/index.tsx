@@ -1,15 +1,20 @@
-import { Container, CardCustom, Content, ContainerImg, Img, Title, Text, TextBox } from './styles';
-import projectlogin from '../../assets/projectlogin.gif'
-import { TitleDefault } from '../../components/Title';
+import { Container, Content, ContainerImg, Link, Img, Title, Text, TextBox } from './styles';
+import screenregister from '../../assets/gifscreenregister.gif';
+import screenlogin from '../../assets/imagescreenlogin.png';
+import screenstopwatch from '../../assets/imagescreenstopwatch.png';
+import { TitleDefaulted } from '../../components/Title';
 
 export const Project = () => {
   return (
     <Container id="projetos">
-      <TitleDefault text='Projetos'/> 
+      <TitleDefaulted text='Projetos'/> 
 
       <Content>
         <ContainerImg>
-          <Img src={projectlogin} alt="projectlogin"></Img>
+          <Link href='github.com/mutadofs/page-registration-login'>
+            <Img src={screenregister} alt="projectlogin"></Img>
+          </Link>
+          
         </ContainerImg>
       
         <TextBox>
@@ -24,9 +29,11 @@ export const Project = () => {
       </Content>
 
       <Content>
-        <CardCustom>
-
-        </CardCustom>
+        <ContainerImg>
+          <Link href='//mutadofs.github.io/web-registration/cadastro.html'>
+            <Img src={screenlogin} alt="projectlogin"></Img>
+          </Link>
+        </ContainerImg>
 
         <TextBox>
           <Title>Em breve</Title>
@@ -41,9 +48,11 @@ export const Project = () => {
       </Content>
 
       <Content>
-        <CardCustom>
-
-        </CardCustom>
+        <ContainerImg>
+          <Link href='//mutadofs.github.io/web-stopwatch/'>
+            <Img src={screenstopwatch} alt="projectlogin"></Img>
+          </Link>
+        </ContainerImg>
 
         <TextBox>
           <Title>Em breve</Title>

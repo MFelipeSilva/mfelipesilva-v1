@@ -10,7 +10,7 @@ import { About } from "./pages/about";
 import { Skills } from "./pages/skills";
 import { Project } from "./pages/project";
 import { Contact } from "./pages/contact";
-import ScrollToTop from "./components/ScrollToTop";
+
 import { NavBar } from "./components/Navbar";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
 
         <Router>
           <NavBar />
-          <ScrollToTop />
+          
 
           <Routes>
             <Route path="/" element={<Home />} />

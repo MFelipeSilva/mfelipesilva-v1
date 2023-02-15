@@ -8,14 +8,18 @@ export const Container = styled.main`
 `;
 
 export const Section = styled.section`
-  display: block;
 `;
 
 export const Img = styled.img`
+  top: 0;
   right: 0;
   height: 150vh;
   z-index: -1;
   position: absolute;
+
+  @media (max-width: 1000px) {
+    height: 80vh;
+  };
 `;
 
 export const ContentHeader = styled.header`
@@ -25,6 +29,10 @@ export const ContentHeader = styled.header`
   justify-content: center;
   padding-left: max(0px, 10vw);
   flex-direction: column;
+`;
+
+export const Link = styled.a`
+  text-decoration: none;
 `;
 
 export const Footer = styled.div`

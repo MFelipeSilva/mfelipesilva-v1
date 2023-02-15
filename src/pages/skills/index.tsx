@@ -10,8 +10,8 @@ import {
 } from "./styles";
 
 import { Card } from "../../components/Cardbox/styles";
-import { TitleDefault } from "../../components/Title";
-import logots from "../../assets/logots.svg";
+import { TitleDefaulted } from "../../components/Title";
+import logotypescript from "../../assets/logotypescript.svg";
 import logoreact from "../../assets/logoreact.svg";
 import logohtml from "../../assets/logohtml.svg";
 import imgcontainer from "../../assets/imgcontainer.svg";
@@ -19,13 +19,13 @@ import imgcontainer from "../../assets/imgcontainer.svg";
 export const Skills = () => {
   return (
     <Container id="habilidades">
-      <TitleDefault text="Habilidades" />
+      <TitleDefaulted text="Habilidades" />
 
       <CardContent>
         <CardCustom>
           <ContainerImg>
             <Img src={imgcontainer} alt="imgcontainer" />
-            <Icon src={logots} Width="40px" Height="40" alt="logots" />
+            <Icon src={logotypescript} Width="40px" Height="40" alt="logots" />
           </ContainerImg>
 
           <Title>Typescript</Title>
@@ -60,7 +60,7 @@ export const Skills = () => {
 
           <Text>
             São as principais linguagens para se criar sites estilizados, são
-            muito fáceis de serem aprendidas e utilizá-las trás um bom
+            muito fáceis de serem aprendidos e utilizá-los trás um bom
             resultado.
           </Text>
         </CardCustom>
