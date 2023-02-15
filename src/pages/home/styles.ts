@@ -20,6 +20,10 @@ export const Img = styled.img`
   @media (max-width: 1000px) {
     height: 80vh;
   };
+  
+  @media (max-width: 500px) {
+    height: 75vh;
+  };
 `;
 
 export const ContentHeader = styled.header`
