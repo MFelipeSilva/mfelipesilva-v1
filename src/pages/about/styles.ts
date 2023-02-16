@@ -33,7 +33,7 @@ export const CardCompartiment = styled.div`
     left: unset;
   };
 
-  @media (max-height: 700px) {
+  @media (max-height: 500px) {
     height: 700px
   }
 `;
