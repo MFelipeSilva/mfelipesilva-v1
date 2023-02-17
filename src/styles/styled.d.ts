@@ -1,9 +1,25 @@
 import 'styled-components';
 
-import dark from './themes/dark';
-
 declare module 'styled-components' {
-  type ThemeType = typeof dark
+  export interface DefaultTheme {
+    typeTheme: string, 
 
-  export interface DefaultTheme extends ThemeType {}
+    COLORS: {
+      BACKGROUND: string,
+      BACKGROUNDTWO: string,
+      
+      COLORTHEME: string,
+      PRIMARY: string,
+      SECONDARY: string,
+      TERTIARY: string,
+
+      TEXTCARD: string,
+      COLORCARD: string,
+    },
+
+    FONTS: {
+      RUBIK: string,
+      KARLA: string,
+    }
+  }
 };

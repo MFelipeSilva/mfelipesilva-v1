@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import dark from "./styles/themes/dark";
+import light from "./styles/themes/light";
 import GlobalStyle, { Section } from "./styles/global";
 
 import { Home } from "./pages/home";
@@ -14,13 +15,19 @@ import { Contact } from "./pages/contact";
 import { NavBar } from "./components/Navbar";
 
 function App() {
+  const [theme, setTheme] = useState(dark);
+
+  const toggleTheme = () => {
+    return setTheme(theme.typeTheme === 'dark' ? light : dark)
+  }
+  
   return (
-    <ThemeProvider theme={dark}>
+    <ThemeProvider theme={theme}>
       <div className="App">
         <GlobalStyle />
 
         <Router>
-          <NavBar />
+          <NavBar toggleTheme={toggleTheme}/>
           
 
           <Routes>

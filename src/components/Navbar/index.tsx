@@ -1,8 +1,15 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import Switch from 'react-switch';
 import logo from '../../assets/logoproject.svg';
+import { ThemeContext } from 'styled-components';
 import { NavigationBar, NavLinks, Text, CustomLink, Img, Li, MenuIcon, CloseIcon } from './styles';
 
-export const NavBar = () => {
+type Props = {
+  toggleTheme(): void;
+}
+
+export const NavBar: React.FC<Props> = ({ toggleTheme }) => {
+  const { COLORS, typeTheme } = useContext(ThemeContext);
   const [click, setClick] = useState(["flex", "none"]);
   const [bar, setBar] = useState(["translateX(0)", "translateX(100%)"]);
 
@@ -27,6 +34,7 @@ export const NavBar = () => {
       <Img src={logo} alt="logoproject" />
       <MenuIcon SetDisplay={click[0]} onClick={switcherIcon}/>
       <CloseIcon SetDisplay={click[1]} onClick={switcherIcon}/>
+
 
       <NavLinks SetTransform={bar[1]} onClick={switcherIcon}>
         
@@ -57,10 +65,21 @@ export const NavBar = () => {
         
           <Li>
             <Text href='#contato'>Contato</Text> 
-          </Li>  
-        
+          </Li>
+
+        <Switch 
+        onChange={toggleTheme}
+        checked={typeTheme === 'dark'}
+        checkedIcon={false}
+        uncheckedIcon={false}
+        height={20}
+        width={50}
+        offColor={COLORS.SECONDARY}
+        onColor={COLORS.TERTIARY}
+      />
         
       </NavLinks>
+
     </NavigationBar>
   )
 }

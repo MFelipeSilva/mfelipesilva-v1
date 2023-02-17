@@ -25,7 +25,8 @@ export const CardCompartiment = styled.div`
   z-index: -1;
   height: 500px;
   transform: skewY(3deg);
-  background-color: #232323;
+  box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+  background-color: ${({ theme }) => theme.COLORS.COLORCARD};
 
   @media (max-width: 768px) {
     height: 90%;
@@ -68,7 +69,7 @@ export const Img = styled.img`
 export const Text = styled.p`
   font-size: 12pt;
   line-height: 150%;
-  color: ${ ({ theme }) => theme.COLORS.PRIMARY};
+  color: ${ ({ theme }) => theme.COLORS.TEXTCARD};
   font-family: ${ ({ theme }) => theme.FONTS.RUBIK};
 
   @media (max-width: 768px) {

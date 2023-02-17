@@ -56,7 +56,7 @@ export const Title = styled.p`
   font-size: 16pt;
   margin-top: 10px;
   font-weight: 500;
-  color: ${({ theme }) => theme.COLORS.PRIMARY};
+  color: ${({ theme }) => theme.COLORS.COLORTHEME};
   font-family: ${({ theme }) => theme.FONTS.RUBIK};
 `;
 

@@ -18,13 +18,15 @@ export const NavigationBar = styled.nav`
   z-index: 1;
   display: flex;
   position: fixed;
-  background: #232323;
   align-items: center;
   padding: 0 10em 0 10em;
   justify-content: space-between;
+  box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+  background: ${({ theme }) => theme.COLORS.BACKGROUNDTWO};
   
   @media (max-width: 800px) {
     background: none;
+    box-shadow: none;
     position: flex;
     
   }
@@ -52,7 +54,7 @@ export const NavLinks = styled.ul<PropsTransform>`
     bottom: 0;
     height: 100vh;
     width: min(75vw, 400px);
-    background: #232323;
+    background: ${({ theme }) => theme.COLORS.BACKGROUNDTWO};
     transform: ${( props ) => props.SetTransform };
     transition: transform 0.3s ease-in;
     align-items: center;
@@ -94,22 +96,24 @@ export const CloseIcon = styled(FaTimes)<PropsDisplay>`
 `;
 
 export const Li = styled.li`
+  margin-right: 50px;
 
   @media (max-width: 800px) {
-    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 0;
   }
 `;
 
 export const Text = styled.a`
   padding: 5px;
   font-size: 11pt;
-  margin-left: 40px;
   text-decoration: none;
-  color: ${({ theme }) => theme.COLORS.PRIMARY};
+  color: ${({ theme }) => theme.COLORS.COLORTHEME};
   font-family: ${({ theme }) => theme.FONTS.RUBIK};
 
   @media (max-width: 800px) {
     font-size: 14pt;
+    
   }
 
   &:hover {
