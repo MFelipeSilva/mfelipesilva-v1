@@ -34,8 +34,8 @@ export const CardCompartiment = styled.div`
     left: unset;
   };
 
-  @media (max-height: 500px) {
-    height: 700px
+  @media (max-width: 500px) {
+    height: 800px
   }
 `;
 
