@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { ThemeProvider } from "styled-components";
+import React from "react";
 import useStoredState from "./hooks/useStoredState";
+import { ThemeProvider, DefaultTheme } from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import dark from "./styles/themes/dark";
@@ -16,7 +16,7 @@ import { Contact } from "./pages/contact";
 import { NavBar } from "./components/Navbar";
 
 function App() {
-  const [theme, setTheme] = useStoredState('theme', dark);
+  const [theme, setTheme] = useStoredState<DefaultTheme>('theme', dark);
 
   const toggleTheme = () => {
     return setTheme(theme.typeTheme === 'dark' ? light : dark)
