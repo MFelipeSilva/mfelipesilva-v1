@@ -16,7 +16,7 @@ export const Home = () => {
     <Container id="/">
       <ContentHeader>
         <TitleHome />
-        <Link href="https://drive.google.com/file/d/1q7qwd7_FyZszGiaLCIkU8fbz27SmHLvJ/view?usp=share_link">
+        <Link href="https://drive.google.com/file/d/12mXpYYOUaA2o0IUbQSUc_c0T3XiXuRAg/view?usp=sharing">
           <Button label="Currículo </>"></Button>
         </Link>
         
