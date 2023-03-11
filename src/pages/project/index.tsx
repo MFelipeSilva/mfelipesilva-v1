@@ -49,7 +49,7 @@ export const Project = () => {
 
       <Content>
         <ContainerImg>
-          <Link href='//mutadofs.github.io/web-stopwatch/'>
+          <Link href='//mutadofs.github.io/web-stopwatch/' target="_blank">
             <Img src={screenstopwatch} alt="projectlogin"></Img>
           </Link>
         </ContainerImg>
