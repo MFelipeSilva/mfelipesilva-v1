@@ -1,6 +1,6 @@
 import { Container, Content, ContainerImg, Link, Img, Title, Text, TextBox } from './styles';
 import screenregister from '../../assets/gifscreenregister.gif';
-import screenlogin from '../../assets/imagescreenlogin.png';
+import searchgithub from '../../assets/gifsearchgithub.gif';
 import screenstopwatch from '../../assets/imagescreenstopwatch.png';
 import { TitleDefaulted } from '../../components/Title';
 
@@ -11,7 +11,7 @@ export const Project = () => {
 
       <Content>
         <ContainerImg>
-          <Link href='github.com/mutadofs/page-registration-login'>
+          <Link href='https://github.com/mutadofs/page-registration-login' target="_blank">
             <Img src={screenregister} alt="projectlogin"></Img>
           </Link>
           
@@ -30,8 +30,8 @@ export const Project = () => {
 
       <Content>
         <ContainerImg>
-          <Link href='//mutadofs.github.io/web-registration/cadastro.html'>
-            <Img src={screenlogin} alt="projectlogin"></Img>
+          <Link href='https://search-github-mu.vercel.app/' target="_blank">
+            <Img src={searchgithub} alt="projectlogin"></Img>
           </Link>
         </ContainerImg>
 
