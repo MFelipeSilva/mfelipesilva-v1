@@ -1,6 +1,7 @@
 import { Container, Content, ContainerImg, Link, Img, Title, Text, TextBox } from './styles';
 import screenregister from '../../assets/gifscreenregister.gif';
 import searchgithub from '../../assets/gifsearchgithub.gif';
+import clonetesla from '../../assets/gifclonetesla.gif';
 import screenstopwatch from '../../assets/imagescreenstopwatch.png';
 import { TitleDefaulted } from '../../components/Title';
 
@@ -31,17 +32,16 @@ export const Project = () => {
       <Content>
         <ContainerImg>
           <Link href='https://search-github-mu.vercel.app/' target="_blank">
-            <Img src={searchgithub} alt="projectlogin"></Img>
+            <Img src={searchgithub} alt="projectgithub"></Img>
           </Link>
         </ContainerImg>
 
         <TextBox>
-          <Title>Em breve</Title>
+          <Title>Search github</Title>
 
           <Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Ea, voluptatum! Facere quo numquam unde aliquid corrupti dolore fugit officia consequuntur amet, blanditiis totam vitae. 
-            Vel libero cupiditate sequi voluptatum quis.
+            Site onde você poderá buscar usuários do github de maneira fácil e rápido, também terá acesso aos 
+            últimos repositórios, e aos seus dados.
           </Text>
         </TextBox>
 
@@ -49,18 +49,17 @@ export const Project = () => {
 
       <Content>
         <ContainerImg>
-          <Link href='//mutadofs.github.io/web-stopwatch/' target="_blank">
-            <Img src={screenstopwatch} alt="projectlogin"></Img>
-          </Link>
+        <Link href='https://clonedtesla.vercel.app/' target="_blank">
+            <Img src={clonetesla} alt="projectclonetesla"></Img>
+        </Link>
         </ContainerImg>
 
         <TextBox>
-          <Title>Em breve</Title>
+          <Title>Clone tesla</Title>
 
           <Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Ea, voluptatum! Facere quo numquam unde aliquid corrupti dolore fugit officia consequuntur amet, blanditiis totam vitae. 
-            Vel libero cupiditate sequi voluptatum quis.
+            Projeto no qual repliquei a página inicial da tesla, o desafio era deixar o mais igual possível,
+            as animações complexas, e a interface do site original.
           </Text>
         </TextBox>
 
