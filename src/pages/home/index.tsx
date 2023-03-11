@@ -1,6 +1,6 @@
 import React from "react";
 import formato from "../../assets/formatogeometrico.svg";
-import { Container, ContentHeader, Img , Section, Footer } from "./styles";
+import { Container, ContentHeader, Link,Img , Section, Footer } from "./styles";
 
 import { Button } from "../../components/Button";
 import { TitleHome } from "../../components/Title";
@@ -16,8 +16,10 @@ export const Home = () => {
     <Container id="/">
       <ContentHeader>
         <TitleHome />
-
-        <Button label="Currículo </>"></Button>
+        <Link href="https://drive.google.com/file/d/12mXpYYOUaA2o0IUbQSUc_c0T3XiXuRAg/view?usp=sharing">
+          <Button label="Currículo </>"></Button>
+        </Link>
+        
 
   
         <Img src={formato}></Img>

@@ -5,11 +5,12 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
   body {
     overflow-x: hidden;
-    background-color: #1D1D1D;
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
   }
 `;
 

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Card } from "../../components/Cardbox/styles";
+import {  CardProject } from "../../components/Cardbox/styles";
 
 export const Container = styled.section`
   display: flex;
@@ -9,28 +9,36 @@ export const Container = styled.section`
   justify-content: space-around;
 `;
 
-export const Content = styled.section`
+export const Content = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 `;
 
-export const CardCustom = styled(Card)`
-  width: 668px;
-  height: 402px;
-  background: #191919;
-`;
+
 
 export const ContainerImg = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+`;
+
+export const Link = styled.a`
+
 `;
 
 export const Img = styled.img`
+  width: 100%;
+  height: 100%;
+  max-width: 668px;
+  max-height: 402px;
   object-fit: cover;
   border-radius: 10px;
+
+  @media (max-width: 1280px) {
+    width: 95%;
+    max-width: 510px;
+    max-height: 400px;
+  }
 `;
 
 export const TextBox = styled.div`
@@ -40,6 +48,11 @@ export const TextBox = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
+
+  @media (max-width: 550px) {
+    width: 90%;
+    margin-left: 0px;
+  };
 `;
 
 export const Title = styled.h1`
@@ -47,12 +60,21 @@ export const Title = styled.h1`
   font-weight: 500;
   font-family: Montserrat;
   color: ${({ theme }) => theme.COLORS.PRIMARY};
+
+  @media (max-width: 550px) {
+    font-size: 1.5rem;
+    text-align: start;
+  };
 `;
 export const Text = styled.p`
-  width: 500px;
+  max-width: 500px;
   font-size: 1.1rem;
   line-height: 150%;
   text-align: start;
   color: ${({ theme }) => theme.COLORS.PRIMARY};
   font-family: ${({ theme }) => theme.FONTS.KARLA};
+
+  @media (max-width: 550px) {
+    font-size: 0.9rem;
+  };
 `;

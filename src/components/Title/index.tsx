@@ -8,14 +8,14 @@ type PropsText = {
 export const TitleHome = () => {
   return (
     <Container>
-      <TitleHeader FontSize='2vw' FontWeight='300'>Olá, me chamo</TitleHeader>
-      <TitleHeader FontSize='4.1vw'FontWeight='900'>FELIPE DA SILVA</TitleHeader>
-      <TitleHeader FontSize='2vw' FontWeight='400'>DESENVOLVEDOR WEB FRONT-END</TitleHeader>
+      <TitleHeader FontSize='clamp(0.9em, 0.3em + 1.3vw, 3em)' FontWeight='300'>Olá, me chamo</TitleHeader>
+      <TitleHeader FontSize='clamp(1em, 0.9em + 3.4vw, 4.1em)'FontWeight='900'>FELIPE DA SILVA</TitleHeader>
+      <TitleHeader FontSize='clamp(0.7em, 0.5em + 1.6vw, 2em)' FontWeight='400'>DESENVOLVEDOR WEB FRONT-END</TitleHeader>
     </Container>
   )  
 };
 
-export const TitleDefault = ({text}: PropsText) => {
+export const TitleDefaulted = ({text}: PropsText) => {
   return (
     <Title>
       {text}

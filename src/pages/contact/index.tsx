@@ -1,4 +1,4 @@
-import { TitleDefault } from "../../components/Title";
+import { TitleDefaulted } from "../../components/Title";
 import { Container, Content , Text, Icons, Links, Textbox } from './styles';
 
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
@@ -6,20 +6,20 @@ import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 export const Contact = () => {
   return (
     <Container id="contato">
-      <TitleDefault text='Contato'/>
+      <TitleDefaulted text='Contato'/>
 
       <Content>
         <Textbox>
-          <Text FontSize="12pt" FontWeight="">
+          <Text FontSize="clamp(0.7em, 0.3em + 1vw, 2.5em)" FontWeight="">
             Para contato, envie nesse e-mail
           </Text>
-          <Text FontSize="22pt" FontWeight="600">
+          <Text FontSize="clamp(0.8em, 0.8em + 1.5vw, 3em)" FontWeight="600">
             silvaafelipe016@gmail.com
           </Text>
         </Textbox>
         
 
-        <Text FontSize="12pt" FontWeight="">
+        <Text FontSize="clamp(0.7em, 0.3em + 1vw, 2.5em)" FontWeight="">
           ou
         </Text>
 

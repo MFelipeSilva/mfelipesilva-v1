@@ -2,39 +2,54 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   display: flex;
-  height: 100vh;
-  justify-content: space-around;
+  height: 1000px; 
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 `;
 
-export const Content = styled.section`
+export const Content = styled.article`
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const CardCompartiment = styled.div`
   position: absolute;
   width: 100%;
   left: 0;
-  min-height: 500px;
   z-index: -1;
+  height: 500px;
   transform: skewY(3deg);
-  background-color: #232323;
+  box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+  background-color: ${({ theme }) => theme.COLORS.COLORCARD};
 
   @media (max-width: 768px) {
-    height: 100%;
+    height: 90%;
+    width: 95%;
+    left: unset;
+  };
+
+  @media (max-width: 500px) {
+    height: 800px
   }
 `;
 
 export const TextCard = styled.div`
   display: flex;
-  margin: 0 150px 0 150px;
+  margin: 0 140px 0 150px;
   align-items: center;
   
-  
+  @media (max-width: 900px) {
+    margin: 0 40px 0 40px;
+  }
+
   @media (max-width: 768px) {
-    display: flex;
+    margin: 0 30px 0 30px;
     flex-direction: column;
   }
 `;
@@ -45,12 +60,19 @@ export const Img = styled.img`
   display: block;
   object-fit: cover;
   margin-right: 10%;
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+  }
 `;
 
 export const Text = styled.p`
   font-size: 12pt;
-  
   line-height: 150%;
-  color: ${ ({ theme }) => theme.COLORS.PRIMARY};
+  color: ${ ({ theme }) => theme.COLORS.TEXTCARD};
   font-family: ${ ({ theme }) => theme.FONTS.RUBIK};
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
 `;
