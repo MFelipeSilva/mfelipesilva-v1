@@ -18,7 +18,7 @@ export const About = () =>  {
           <Img src={myface} alt="image"></Img>
 
           <Text>
-            Olá, sou conhecido como mutadofs, tenho 16 anos de idade, e estou estudando para ser um desenvolvedor Fullstack,
+            Olá, sou conhecido como mutadofs, tenho 17 anos de idade, e estou estudando para ser um desenvolvedor Fullstack,
             já que gosto do Frontend e do Backend. Ainda não tenho nenhuma experiência de trabalho, mas já
             fiz diversos projetos utilizando HTML/CSS e ReactJS/Native, também dei início a área do back desenvolvendo algumas APIs.
             <br></br>
