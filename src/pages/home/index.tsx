@@ -40,7 +40,7 @@ export const Home = () => {
       </Section>
 
       <Footer>
-        © Site desenvolido por mutadofs · 2023 
+        © Site desenvolvido por mutadofs · 2023 
       </Footer>
     </Container>
   );
