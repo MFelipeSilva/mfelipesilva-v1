@@ -9,7 +9,7 @@ export const Container = styled.section`
   flex-direction: column;
 
   @media (max-width: 640px) {
-    height: 1500px;
+    height: 1600px;
     justify-content: center;
   }
 `;
@@ -21,5 +21,9 @@ export const CardContent = styled.div`
   margin-top: 70px;
   flex-direction: row;
   justify-content: space-around;
+`;
+
+export const Img = styled.img`
+  position: absolute;
 `;
 

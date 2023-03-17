@@ -12,6 +12,15 @@ export default createGlobalStyle`
     overflow-x: hidden;
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
   }
+
+  body::-webkit-scrollbar {
+    width: 14px;
+    background: ${({ theme }) => theme.COLORS.BACKGROUNDTWO};
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: #FFDA22;
+  }
 `;
 
 export const Section = styled.section`

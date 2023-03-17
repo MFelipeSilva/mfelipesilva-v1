@@ -2,7 +2,7 @@ import { useState, useContext } from 'react';
 import logo from '../../assets/logoproject.svg';
 import Switch from "react-switch"
 import { ThemeContext } from 'styled-components';
-import { NavigationBar, NavLinks, Text, CustomLink, Img, Li, MenuIcon, CloseIcon } from './styles';
+import { NavigationBar, NavLinks, Text, Img, Li, MenuIcon, CloseIcon } from './styles';
 
 type Props = {
   toggleTheme(): void;

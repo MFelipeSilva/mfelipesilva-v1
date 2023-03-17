@@ -10,7 +10,7 @@ export const SkillItem = ({ skill }: Props) => {
       <Styles.CardCustom>
         <Styles.ContainerImg>
           <Styles.Img src={imgcontainer}></Styles.Img>
-          <Styles.Icon src={skill.imageURL} Width="40px" Height="40" alt="logots" />
+          <Styles.Icon src={skill.imageURL} />
         </Styles.ContainerImg>
         
         <Styles.Title>{skill.title}</Styles.Title>

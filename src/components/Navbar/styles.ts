@@ -97,10 +97,15 @@ export const CloseIcon = styled(FaTimes)<PropsDisplay>`
 
 export const Li = styled.li`
   margin-right: 50px;
+  transition: 0.6s ease-out;
 
   @media (max-width: 800px) {
     margin-bottom: 2rem;
     margin-right: 0;
+  }
+
+  &:hover {
+    border-bottom: 2px solid #eec643;
   }
 `;
 
@@ -118,6 +123,7 @@ export const Text = styled.a`
 
   &:hover {
     cursor: pointer;
+    
     color: ${({ theme }) => theme.COLORS.SECONDARY};
   }
 `;

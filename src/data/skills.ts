@@ -1,6 +1,7 @@
 import logotypescript from "../assets/logotypescript.svg";
 import logoreact from "../assets/logoreact.svg";
 import logohtml from "../assets/logohtml.svg";
+import logonode from "../assets/logonode.svg";
 
 const skills = [
   {
@@ -14,6 +15,12 @@ const skills = [
     imageURL: logoreact ,
     title: "ReactJS",
     text: "Um framework excelente para quem trabalha na áera do Frontend, você é capaz de criar interfaces ótimas e eficiente.",
+  },
+  {
+    id: "101056",
+    imageURL: logonode,
+    title: "Node.js",
+    text: "É um dos melhores recursos para se utilizar e conectar com APIs e banco de dados, tendo com objetivo executar códigos.",
   },
   {
     id: "101057",

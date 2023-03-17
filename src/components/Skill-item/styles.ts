@@ -1,12 +1,6 @@
 import styled from "styled-components";
 import { Card } from "../Cardbox/styles";
 
-type PropsSize = {
-  Width: string;
-  Height: string;
-};
-
-
 
 export const CardCustom = styled(Card)`
   display: flex;
@@ -25,10 +19,15 @@ export const Img = styled.img`
   height: 100px;
 `;
 
-export const Icon = styled.img<PropsSize>`
-  width: ${(props) => props.Width};
-  height: ${(props) => props.Height};
+export const Icon = styled.img`
   position: absolute;
+  width: 4vw;
+  height: 4vh;
+
+  @media (max-width: 1280px) {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 export const Title = styled.p`

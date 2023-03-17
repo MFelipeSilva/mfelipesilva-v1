@@ -8,12 +8,20 @@ export const Content = styled.div`
 `;
 
 export const ContainerImg = styled.div`
+  transition: 500ms linear;
 
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 590px) {
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
 `;
 
-export const Link = styled.a`
-
-`;
+export const Link = styled.a``;
 
 export const Img = styled.img`
   width: 100%;
@@ -41,7 +49,7 @@ export const TextBox = styled.div`
   @media (max-width: 550px) {
     width: 90%;
     margin-left: 0px;
-  };
+  } ;
 `;
 
 export const Title = styled.h1`
@@ -53,7 +61,7 @@ export const Title = styled.h1`
   @media (max-width: 550px) {
     font-size: 1.5rem;
     text-align: start;
-  };
+  } ;
 `;
 export const Text = styled.p`
   max-width: 500px;
@@ -65,5 +73,5 @@ export const Text = styled.p`
 
   @media (max-width: 550px) {
     font-size: 0.9rem;
-  };
+  } ;
 `;

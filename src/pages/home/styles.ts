@@ -16,7 +16,7 @@ export const Img = styled.img`
   height: 150vh;
   z-index: -1;
   position: absolute;
-
+  
   @media (max-width: 1000px) {
     height: 80vh;
   };
@@ -28,7 +28,7 @@ export const Img = styled.img`
 
 export const ContentHeader = styled.header`
   display: flex;
-  width: 50vw;
+  width: 0;
   height: 110vh;
   justify-content: center;
   padding-left: max(0px, 10vw);
