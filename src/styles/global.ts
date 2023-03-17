@@ -14,12 +14,12 @@ export default createGlobalStyle`
   }
 
   body::-webkit-scrollbar {
-    width: 14px;
-    background: ${({ theme }) => theme.COLORS.BACKGROUNDTWO};
+    width: 12px;
+    background: ${({ theme }) => theme.COLORS.COLORTHEME};
   }
 
   body::-webkit-scrollbar-thumb {
-    background: #FFDA22;
+    background: #eec643;
   }
 `;
 
