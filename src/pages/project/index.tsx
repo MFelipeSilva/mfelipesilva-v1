@@ -11,7 +11,7 @@ export const Project = () => {
 
     {projects.map((project) => (
       <ProjectItem project={project} key={project.id}/>
-    ))}
+    ))};
 
     </Styles.Container>
   )

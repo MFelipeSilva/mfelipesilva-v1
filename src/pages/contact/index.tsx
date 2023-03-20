@@ -24,13 +24,13 @@ export const Contact = () => {
         </Text>
 
         <Icons>
-          <Links href="https://github.com/mutadofs/">
+          <Links href="https://github.com/mfelipesilva/">
             <FaGithub fontSize={25}/>
           </Links>
           <Links href="https://www.instagram.com/_silvafelipeey/">
             <FaInstagram fontSize={25}/>
           </Links>
-          <Links href="https://www.linkedin.com/in/mutadofs/">
+          <Links href="https://www.linkedin.com/in/mfelipesilva/">
             <FaLinkedin fontSize={25}/>
           </Links>
         </Icons>
