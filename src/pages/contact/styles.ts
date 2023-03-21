@@ -7,7 +7,7 @@ type PropsSize = {
 
 export const Container = styled.section`
   display: flex;
-  height: 100vh;
+  height: 80vh;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;

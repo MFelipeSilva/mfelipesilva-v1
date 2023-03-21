@@ -6,5 +6,5 @@ export const Container = styled.section`
   height: 1500px;
   text-align: center;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 `;

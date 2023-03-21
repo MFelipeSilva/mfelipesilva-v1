@@ -5,12 +5,14 @@ export const Content = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 1072px) {
+    margin-top: 20px;
+  }
 `;
 
 export const ContainerImg = styled.div`
   margin-bottom: 30px;
-
-  
 `;
 
 export const Link = styled.a`
