@@ -30,6 +30,10 @@ export const NavigationBar = styled.nav`
     position: flex;
     
   }
+
+  @media (max-width: 1300px) {
+    padding: 0 5em 0 5em;
+  }
 `;
 
 export const Img = styled.img`
@@ -96,7 +100,7 @@ export const CloseIcon = styled(FaTimes)<PropsDisplay>`
 `;
 
 export const Li = styled.li`
-  margin-right: 50px;
+  margin-right: 40px;
   transition: 0.6s ease-out;
 
   @media (max-width: 800px) {
@@ -104,17 +108,33 @@ export const Li = styled.li`
     margin-right: 0;
   }
 
-  &:hover {
-    border-bottom: 2px solid #eec643;
+  a:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: 8px;
+    left: 0;
+    height: 2px;
+    background: #eec643;
+    opacity: 0.4;
+    transition: all .35s ease-in-out;
+  }
+
+  a:hover:before {
+    right: 0;
+    opacity: .8;
+    color: ${({ theme }) => theme.COLORS.SECONDARY};
   }
 `;
 
 export const Text = styled.a`
-  padding: 5px;
+  position: relative;
+  padding-bottom: 15px;
   font-size: 11pt;
   text-decoration: none;
   color: ${({ theme }) => theme.COLORS.COLORTHEME};
   font-family: ${({ theme }) => theme.FONTS.RUBIK};
+  transition: opacity .35s ease-in-out;
 
   @media (max-width: 800px) {
     font-size: 14pt;
@@ -123,9 +143,8 @@ export const Text = styled.a`
 
   &:hover {
     cursor: pointer;
-    
-    color: ${({ theme }) => theme.COLORS.SECONDARY};
   }
+
 `;
 
 export const CustomLink = styled(Link)`

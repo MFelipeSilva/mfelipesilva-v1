@@ -42,7 +42,7 @@ export const Home = () => {
       </Section>
 
       <Footer>
-        © Site desenvolvido por mutadofs · 2023 
+        © Site desenvolvido por felipe silva · 2023 
       </Footer>
     </Container>
   );

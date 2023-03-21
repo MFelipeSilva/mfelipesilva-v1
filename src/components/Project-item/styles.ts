@@ -8,20 +8,15 @@ export const Content = styled.div`
 `;
 
 export const ContainerImg = styled.div`
-  transition: 500ms linear;
+  margin-bottom: 30px;
 
-  &:hover {
-    transform: scale(1.1);
-  }
-
-  @media (max-width: 590px) {
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
+  
 `;
 
-export const Link = styled.a``;
+export const Link = styled.a`
+  text-decoration: none;
+  color: #000;
+`;
 
 export const Img = styled.img`
   width: 100%;
@@ -56,6 +51,7 @@ export const Title = styled.h1`
   font-size: 2rem;
   font-weight: 500;
   font-family: Montserrat;
+  margin-bottom: 10px;
   color: ${({ theme }) => theme.COLORS.PRIMARY};
 
   @media (max-width: 550px) {
@@ -68,6 +64,7 @@ export const Text = styled.p`
   font-size: 1.1rem;
   line-height: 150%;
   text-align: start;
+  opacity: 0.8;
   color: ${({ theme }) => theme.COLORS.PRIMARY};
   font-family: ${({ theme }) => theme.FONTS.KARLA};
 
@@ -75,3 +72,27 @@ export const Text = styled.p`
     font-size: 0.9rem;
   } ;
 `;
+
+export const Buttons = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0 0 ;
+  opacity: 0.9;
+`;
+
+export const ContentIcon = styled.div`
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: ${({ theme }) => theme.COLORS.SECONDARY};
+
+  cursor: pointer;
+  margin-left: 15px;
+  border-radius: 50%;
+
+  svg {
+    font-size: 15pt;
+  }
+`
