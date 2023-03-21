@@ -30,39 +30,28 @@ export const NavBar: React.FC<Props> = ({ toggleTheme }) => {
 
   return (
     <NavigationBar>
-
       <Img src={logo} alt="logoproject" />
       <MenuIcon SetDisplay={click[0]} onClick={switcherIcon}/>
+
       <CloseIcon SetDisplay={click[1]} onClick={switcherIcon}/>
 
-
       <NavLinks SetTransform={bar[1]} onClick={switcherIcon}>
-        
-        
           <Li>
             <Text href='#'>Início</Text>
           </Li>
-        
 
-        
           <Li>
             <Text href='#sobre'>Sobre</Text>
           </Li>
-        
-        
-        
+
           <Li>
             <Text href='#habilidades'>Habilidades</Text>
           </Li>          
-        
 
-        
           <Li>
             <Text href='#projetos'>Projetos</Text>
           </Li> 
-        
 
-        
           <Li>
             <Text href='#contato'>Contato</Text> 
           </Li>
@@ -79,7 +68,6 @@ export const NavBar: React.FC<Props> = ({ toggleTheme }) => {
       />
         
       </NavLinks>
-
     </NavigationBar>
   )
 }
