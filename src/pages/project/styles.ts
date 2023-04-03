@@ -43,15 +43,15 @@ export const EffectShadow = styled.div<PropsDisplay>`
     position: absolute;
     left: 0;
     right: 0;
-    margin-top: 1270px;
+    margin-top: 1380px;
     border-radius: 10px;
-    background: linear-gradient(rgba(0, 0, 0, 0), 30%, ${({ theme }) => theme.COLORS.BACKGROUND});
+    background: linear-gradient(rgba(0, 0, 0, 0), 20%, ${({ theme }) => theme.COLORS.BACKGROUND});
     z-index: 3;
   }
 
   @media (max-width: 1135px) {
     &:before {
-      margin-top: 1670px;
+      margin-top: 1720px;
     }
   }
 `;
@@ -60,7 +60,7 @@ export const Button =  styled.button<PropsDisplay>`
   display: ${( props ) => props.SetDisplay};
   z-index: 4;
   position: absolute;
-  margin-top: 1420px;
+  margin-top: 1500px;
   width: max(140px, 3.5vw);
   height: max(20px, 2.5vw);
   padding: max(17px, 1vw);
@@ -81,6 +81,6 @@ export const Button =  styled.button<PropsDisplay>`
   }
 
   @media (max-width: 1135px) {
-    margin-top: 1770px;
+    margin-top: 1800px;
   }
 `;

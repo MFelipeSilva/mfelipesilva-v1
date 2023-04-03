@@ -25,7 +25,7 @@ export const Project = () => {
       </Styles.EffectShadow>
       {projects.slice(0, addStyles[0]).map((project) => (
         <ProjectItem project={project} />
-      ))};
+      ))}
     </Styles.Container>
   );
 };
