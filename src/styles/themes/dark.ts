@@ -11,6 +11,7 @@ export default {
     TERTIARY: '#181818',
 
     TEXTCARD: '#FFFFFF',
+    TEXTBOX: 'rgba(255,255,255,0.2)',
     COLORCARD: '#232323',
   },
 

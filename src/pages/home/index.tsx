@@ -1,10 +1,9 @@
 import React from "react";
-import formato from "../../assets/formatogeometrico.svg";
-import { Container, ContentHeader, Link,Img , Section, Footer } from "./styles";
+import bannerformat from "../../assets/bannerformat.svg";
+import * as Styles from "./styles";
 
 import { Button } from "../../components/Button";
 import { TitleHome } from "../../components/Title";
-import { NavBar } from "../../components/Navbar";
 
 import { About } from "../about";
 import { Skills } from "../skills";
@@ -13,37 +12,35 @@ import { Contact } from "../contact";
 
 export const Home = () => {
   return (
-    <Container id="/">
-      <ContentHeader>
+    <Styles.Container id="/">
+      <Styles.ContentHeader>
         <TitleHome />
-        <Link href="https://drive.google.com/file/d/17GjPpfhXGIDx6x9e6VA6wlHXb2K8u6MH/view?usp=share_link">
+        <Styles.Link target="_blank" href="https://drive.google.com/file/d/17GjPpfhXGIDx6x9e6VA6wlHXb2K8u6MH/view?usp=share_link">
           <Button label="Currículo </>"></Button>
-        </Link>
+        </Styles.Link>
         
+        <Styles.Img src={bannerformat} />
+      </Styles.ContentHeader>
 
-  
-        <Img src={formato}></Img>
-      </ContentHeader>
-
-      <Section>
+      <Styles.Section>
         <About />
-      </Section>
+      </Styles.Section>
 
-      <Section>
+      <Styles.Section>
         <Skills />
-      </Section>
+      </Styles.Section>
 
-      <Section>
+      <Styles.Section>
         <Project />
-      </Section>
+      </Styles.Section>
 
-      <Section>
+      <Styles.Section>
         <Contact />
-      </Section>
+      </Styles.Section>
 
-      <Footer>
+      <Styles.Footer>
         © Site desenvolvido por felipe silva · 2023 
-      </Footer>
-    </Container>
+      </Styles.Footer>
+    </Styles.Container>
   );
 };

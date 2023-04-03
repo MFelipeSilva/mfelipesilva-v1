@@ -1,42 +1,42 @@
 import { TitleDefaulted } from "../../components/Title";
-import { Container, Content , Text, Icons, Links, Textbox } from './styles';
+import * as Styles from './styles';
 
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 export const Contact = () => {
   return (
-    <Container id="contato">
+    <Styles.Container id="contato">
       <TitleDefaulted text='Contato'/>
 
-      <Content>
-        <Textbox>
-          <Text FontSize="clamp(0.7em, 0.3em + 1vw, 2.5em)" FontWeight="">
+      <Styles.Content>
+        <Styles.Textbox>
+          <Styles.Text FontSize="clamp(0.7em, 0.3em + 1vw, 2.5em)" FontWeight="">
             Para contato, envie nesse e-mail
-          </Text>
-          <Text FontSize="clamp(0.8em, 0.8em + 1.5vw, 3em)" FontWeight="600">
+          </Styles.Text>
+          <Styles.Text FontSize="clamp(0.8em, 0.8em + 1.5vw, 3em)" FontWeight="600">
             silvaafelipe016@gmail.com
-          </Text>
-        </Textbox>
+          </Styles.Text>
+        </Styles.Textbox>
         
 
-        <Text FontSize="clamp(0.7em, 0.3em + 1vw, 2.5em)" FontWeight="">
+        <Styles.Text FontSize="clamp(0.7em, 0.3em + 1vw, 2.5em)" FontWeight="">
           ou
-        </Text>
+        </Styles.Text>
 
-        <Icons>
-          <Links href="https://github.com/mfelipesilva/">
+        <Styles.Icons>
+          <Styles.Links href="https://github.com/mfelipesilva/">
             <FaGithub fontSize={25}/>
-          </Links>
-          <Links href="https://www.instagram.com/_silvafelipeey/">
+          </Styles.Links>
+          <Styles.Links href="https://www.instagram.com/_silvafelipeey/">
             <FaInstagram fontSize={25}/>
-          </Links>
-          <Links href="https://www.linkedin.com/in/mfelipesilva/">
+          </Styles.Links>
+          <Styles.Links href="https://www.linkedin.com/in/mfelipesilva/">
             <FaLinkedin fontSize={25}/>
-          </Links>
-        </Icons>
-      </Content>
+          </Styles.Links>
+        </Styles.Icons>
+      </Styles.Content>
       
       
-    </Container>
+    </Styles.Container>
   )
 }

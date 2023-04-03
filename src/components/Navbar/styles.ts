@@ -15,7 +15,7 @@ type PropsTransform = {
 export const NavigationBar = styled.nav`
   height: 6em;
   width: 100%;
-  z-index: 1;
+  z-index: 5;
   display: flex;
   position: fixed;
   align-items: center;
@@ -72,6 +72,7 @@ export const MenuIcon = styled(FaBars)<PropsDisplay>`
   display: none;
   top: 0;
   right: 0;
+
   cursor: pointer;
   font-size: 1.8rem;
   margin: 40px 40px;

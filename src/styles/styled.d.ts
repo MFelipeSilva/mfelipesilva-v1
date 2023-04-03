@@ -14,6 +14,7 @@ declare module 'styled-components' {
       TERTIARY: string,
 
       TEXTCARD: string,
+      TEXTBOX: string,
       COLORCARD: string,
     },
 

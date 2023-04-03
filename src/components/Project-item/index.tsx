@@ -20,11 +20,11 @@ export const ProjectItem = ({ project }: Props) => {
         <Styles.Text>{project.text}</Styles.Text>
 
         <Styles.Buttons>
-          <Styles.Link href={project.link}>
+          <Styles.Link target="_blank" href={project.link}>
             <CardButton>ver projeto</CardButton>
           </Styles.Link>  
 
-          <Styles.Link href={project.github}>
+          <Styles.Link target="_blank" href={project.github}>
             <Styles.ContentIcon>
               <FaGithub />  
             </Styles.ContentIcon>
