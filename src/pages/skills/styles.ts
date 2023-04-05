@@ -17,9 +17,8 @@ export const Container = styled.main`
 export const CardContent = styled.div`
   display: flex;
   width: 100vw;
-  flex-wrap: wrap;
   margin-top: 70px;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-around;
 `;
 
