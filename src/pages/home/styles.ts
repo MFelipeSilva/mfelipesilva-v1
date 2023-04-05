@@ -26,9 +26,9 @@ export const Img = styled.img`
   };
 `;
 
-export const ContentHeader = styled.header`
+export const ContentHeader = styled.main`
   display: flex;
-  width: 0;
+  width: 100vw;
   height: 110vh;
   justify-content: center;
   padding-left: max(0px, 10vw);
@@ -37,6 +37,8 @@ export const ContentHeader = styled.header`
 
 export const Link = styled.a`
   text-decoration: none;
+  width: max(150px, 15vw);
+  height: max(30px, 3vw);
 `;
 
 export const Footer = styled.div`

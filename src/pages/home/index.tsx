@@ -14,11 +14,13 @@ export const Home = () => {
   return (
     <Styles.Container id="/">
       <Styles.ContentHeader>
+
         <TitleHome />
-        <Styles.Link target="_blank" href="https://drive.google.com/file/d/17GjPpfhXGIDx6x9e6VA6wlHXb2K8u6MH/view?usp=share_link">
-          <Button label="Currículo </>"></Button>
-        </Styles.Link>
-        
+
+          <Styles.Link target="_blank" href="https://drive.google.com/file/d/17GjPpfhXGIDx6x9e6VA6wlHXb2K8u6MH/view?usp=share_link">
+            <Button label="Currículo </>"></Button>
+          </Styles.Link>
+               
         <Styles.Img src={bannerformat} />
       </Styles.ContentHeader>
 

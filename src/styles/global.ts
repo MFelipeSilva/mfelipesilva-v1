@@ -15,7 +15,7 @@ export default createGlobalStyle`
 
   body::-webkit-scrollbar {
     width: 12px;
-    background: ${({ theme }) => theme.COLORS.COLORTHEME};
+    background: ${({ theme }) => theme.COLORS.TEXTCARD};
   }
 
   body::-webkit-scrollbar-thumb {
