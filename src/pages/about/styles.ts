@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.section`
+export const Container = styled.main`
   display: flex;
   height: 1000px; 
   justify-content: space-evenly;
@@ -39,17 +39,18 @@ export const CardCompartiment = styled.div`
   }
 `;
 
-export const TextCard = styled.div`
+export const TextCard = styled.address`
   display: flex;
-  margin: 0 140px 0 150px;
   align-items: center;
+  font-style: normal;
+  margin: 0 140px 0 150px;
   
   @media (max-width: 900px) {
-    margin: 0 40px 0 40px;
+    margin: 0 40px;
   }
 
   @media (max-width: 768px) {
-    margin: 0 30px 0 30px;
+    margin: 0 30px;
     flex-direction: column;
   }
 `;

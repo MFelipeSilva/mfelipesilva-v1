@@ -12,7 +12,7 @@ export const About = () =>  {
         <Styles.CardCompartiment />
 
         <Styles.TextCard>
-          <Styles.Img src={myface} alt="image"></Styles.Img>
+          <Styles.Img src={myface} alt="my picture"></Styles.Img>
 
           <Styles.Text>
             Olá, sou conhecido como Felipe, tenho 17 anos de idade, e estou estudando para ser um desenvolvedor Fullstack,

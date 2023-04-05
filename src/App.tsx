@@ -8,6 +8,7 @@ import GlobalStyle from "./styles/global";
 
 import { Home } from "./pages/home";
 import { NavBar } from "./components/Navbar";
+import { Layout } from "./layout";
 
 function App() {
   const [theme, setTheme] = useStoredState<DefaultTheme>("theme", dark);
@@ -25,7 +26,8 @@ function App() {
           <NavBar toggleTheme={toggleTheme} />
         </header>
       
-        <Home />
+        <Layout />
+        
       </div>
     </ThemeProvider>
   );

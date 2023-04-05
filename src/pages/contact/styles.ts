@@ -5,7 +5,7 @@ type PropsSize = {
   FontSize: string,
 };
 
-export const Container = styled.section`
+export const Container = styled.main`
   display: flex;
   height: 80vh;
   align-items: center;

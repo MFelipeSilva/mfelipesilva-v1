@@ -11,7 +11,7 @@ type PropsHeight = {
 }
 
 
-export const Container = styled.section<PropsHeight>`
+export const Container = styled.main<PropsHeight>`
   display: flex;
   height: ${( props ) => props.SetHeight};
   text-align: center;

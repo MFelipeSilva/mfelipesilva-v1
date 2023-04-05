@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.section`
+export const Container = styled.main`
   display: flex;
   height: 1020px;
   text-align: center;
