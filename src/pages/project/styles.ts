@@ -7,6 +7,7 @@ type PropsDisplay = {
 type PropsHeight = {
   SetHeight: string,
   SetHeightMedium: string,
+  SetHeightIntermediary: string,
   SetHeightSmall: string,
 }
 
@@ -19,12 +20,12 @@ export const Container = styled.main<PropsHeight>`
   flex-direction: column;
   justify-content: space-between;
 
-  @media (max-width: 1200px) {
-    height: 1700px;
+  @media (max-width: 1280px) {
+    height: ${( props ) => props.SetHeightMedium};
   }
 
-  @media (max-width: 1135px) {
-    height: ${( props ) => props.SetHeightMedium};
+  @media (max-width: 1200px) {
+    height: ${( props ) => props.SetHeightIntermediary};
   }
 
   @media (max-width: 550px) {
@@ -43,7 +44,7 @@ export const EffectShadow = styled.div<PropsDisplay>`
     position: absolute;
     left: 0;
     right: 0;
-    margin-top: 1380px;
+    margin-top: 78em;
     border-radius: 10px;
     background: linear-gradient(rgba(0, 0, 0, 0), 20%, ${({ theme }) => theme.COLORS.BACKGROUND});
     z-index: 3;
@@ -51,16 +52,22 @@ export const EffectShadow = styled.div<PropsDisplay>`
 
   @media (max-width: 1135px) {
     &:before {
-      margin-top: 1720px;
+      margin-top: 110em;
     }
   }
+
+  @media (max-width: 550px) {
+    &:before {
+      margin-top: 100em;
+    }
+  };
 `;
 
 export const Button =  styled.button<PropsDisplay>`
   display: ${( props ) => props.SetDisplay};
   z-index: 4;
   position: absolute;
-  margin-top: 1500px;
+  margin-top: 1350px;
   width: max(140px, 3.5vw);
   height: max(20px, 2.5vw);
   padding: max(17px, 1vw);
@@ -81,6 +88,9 @@ export const Button =  styled.button<PropsDisplay>`
   }
 
   @media (max-width: 1135px) {
-    margin-top: 1800px;
+    margin-top: 1850px;
+  }
+  @media (max-width: 550px) {
+    margin-top: 1700px;
   }
 `;

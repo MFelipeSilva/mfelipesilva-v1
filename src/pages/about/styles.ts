@@ -15,6 +15,7 @@ export const Content = styled.article`
 
   @media (max-width: 768px) {
     flex-direction: column;
+    margin-top: 100px;
   }
 `;
 

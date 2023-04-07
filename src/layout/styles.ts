@@ -10,13 +10,12 @@ export const Container = styled.main`
 export const Section = styled.section`
 `;
 
-export const Footer = styled.div`
-  width: 100%;
-  display: flex;
-  padding: 25px;
+export const Footer = styled.footer`
+  flex: 1;
   font-size: 12px;
   text-align: center;
-  font-family: Montserrat;
+  margin-bottom: 35px;
   justify-content: center;
+  font-family: Montserrat, sans-serif;
   color: ${({ theme }) => theme.COLORS.PRIMARY};
 `;

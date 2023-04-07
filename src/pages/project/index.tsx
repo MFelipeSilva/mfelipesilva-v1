@@ -7,14 +7,14 @@ import { TitleDefaulted } from "../../components/Title";
 import { ProjectItem } from "../../components/Project-item";
 
 export const Project = () => {
-  const [addStyles, setAddStyles] = useState<any[]>([3, "flex", "1800px", "2100px", "2000px"]);
+  const [addStyles, setAddStyles] = useState<any[]>([3, "flex", "1600px", "1500px", "2050px", "1950px"]);
 
   const handleHideOrApper = () => {
-    setAddStyles([4, "none", "2200px", "2700px", "2700px"]);
+    setAddStyles([4, "none", "2200px", "2100px", "2750px", "2500px"]);
   };
 
   return (
-    <Styles.Container id="projetos" SetHeight={addStyles[2]} SetHeightMedium={addStyles[3]} SetHeightSmall={addStyles[4]}>
+    <Styles.Container id="projetos" SetHeight={addStyles[2]} SetHeightMedium={addStyles[3]} SetHeightIntermediary={addStyles[4]} SetHeightSmall={addStyles[5]}>
       <TitleDefaulted text="Projetos" />
 
       <Styles.EffectShadow SetDisplay={addStyles[1]}>

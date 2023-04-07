@@ -10,7 +10,7 @@ export const Container = styled.div`
 `
 
 export const Title = styled.h1`
-  font-size: 2rem;
+  font-size: clamp(25px, 2vw, 2rem);
   color: ${({ theme }) => theme.COLORS.COLORTHEME};
   font-family: ${({ theme }) => theme.FONTS.RUBIK};
 `;
