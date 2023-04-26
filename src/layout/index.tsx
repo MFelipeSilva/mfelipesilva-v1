@@ -30,10 +30,7 @@ export const Layout = () => {
         <Contact />
       </Styles.Section>
 
-      <Styles.Footer>
-        © Site desenvolvido por felipe silva · 2023 
-      </Styles.Footer>
+      <Styles.Footer>© Site desenvolvido por felipe silva · 2023</Styles.Footer>
     </Styles.Container>
-  )
-}
-
+  );
+};

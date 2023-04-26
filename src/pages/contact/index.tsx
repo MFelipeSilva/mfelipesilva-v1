@@ -24,13 +24,13 @@ export const Contact = () => {
         </Styles.Text>
 
         <Styles.Icons>
-          <Styles.Links href="https://github.com/mfelipesilva/">
+          <Styles.Links target="_blank" href="https://github.com/mfelipesilva/">
             <FaGithub fontSize={25}/>
           </Styles.Links>
-          <Styles.Links href="https://www.instagram.com/_silvafelipeey/">
+          <Styles.Links target="_blank" href="https://www.instagram.com/_silvafelipeey/">
             <FaInstagram fontSize={25}/>
           </Styles.Links>
-          <Styles.Links href="https://www.linkedin.com/in/mfelipesilva/">
+          <Styles.Links target="_blank" href="https://www.linkedin.com/in/mfelipesilva/">
             <FaLinkedin fontSize={25}/>
           </Styles.Links>
         </Styles.Icons>

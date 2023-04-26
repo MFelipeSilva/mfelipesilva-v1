@@ -1,6 +1,10 @@
 import styled, { createGlobalStyle } from "styled-components";
 
-export default createGlobalStyle`
+type Props = {
+  SetOverflow: string
+}
+
+export default createGlobalStyle<Props>`
   * {
     margin: 0;
     padding: 0;
@@ -10,6 +14,7 @@ export default createGlobalStyle`
 
   body {
     overflow-x: hidden;
+    overflow-y: ${( props ) => props.SetOverflow};
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
   }
 
