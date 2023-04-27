@@ -16,20 +16,20 @@ export const ImgAnimate = styled.img`
   width: 100%;
   height: 100%;
 
-  max-width: 100px;
-  max-height: 90px;
+  max-width: 80px;
+  max-height: 70px;
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   @media (max-width: 1225px) {
-    max-width: 80px;
+    max-width: 70px;
     height: auto;
   }
 
   @media (max-width: 600px) {
-    max-width: 70px;
+    max-width: 60px;
     height: auto;
   }
 `;
