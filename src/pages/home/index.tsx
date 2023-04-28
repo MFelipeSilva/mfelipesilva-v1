@@ -13,7 +13,7 @@ export const Home = () => {
       <Styles.ContentHeader>
         <TitleHome />
 
-          <Styles.Link target="_blank" href="https://drive.google.com/file/d/17GjPpfhXGIDx6x9e6VA6wlHXb2K8u6MH/view?usp=share_link">
+          <Styles.Link target="_blank" href="https://drive.google.com/file/d/1GZNwuXYadydMV4O-rSttH1DTBX0l-9hp/view?usp=share_link">
             <Button label="Currículo </>"></Button>
           </Styles.Link>          
       </Styles.ContentHeader>
