@@ -13,6 +13,7 @@ declare module 'styled-components' {
       SECONDARY: string,
       TERTIARY: string,
 
+      COLORSCROLL: string,
       TEXTCARD: string,
       TEXTBOX: string,
       COLORCARD: string,

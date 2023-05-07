@@ -10,6 +10,7 @@ export default {
     SECONDARY: '#eec643',
     TERTIARY: '#181818',
 
+    COLORSCROLL: 'light',
     TEXTCARD: '#FFFFFF',
     TEXTBOX: 'rgba(0,0,0,0.2)',
     COLORCARD: '#eec643',
