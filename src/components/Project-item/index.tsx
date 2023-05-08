@@ -26,7 +26,7 @@ export const ProjectItem = ({ project }: Props) => {
 
           <Styles.Link target="_blank" href={project.github}>
             <Styles.ContentIcon>
-              <FaGithub />  
+              <FaGithub color="#000000"/>  
             </Styles.ContentIcon>
           </Styles.Link>     
         </Styles.Buttons>
