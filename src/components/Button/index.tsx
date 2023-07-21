@@ -1,15 +1,13 @@
-import {  Container, CustomButton } from './styles';
+import { Container, CustomButton } from "./styles";
 
 type PropsText = {
-  label: string,
+  label: string;
 };
 
 export const Button = ({ label }: PropsText) => {
   return (
     <Container>
-      <CustomButton>
-        {label}
-      </CustomButton>
+      <CustomButton>{label}</CustomButton>
     </Container>
-  )
+  );
 };

@@ -1,8 +1,20 @@
 import React from "react";
-import { CardButton } from "../Button/styles";
+
 import { FaGithub } from "react-icons/fa";
 
-import * as Styles from "./styles";
+import { CardButton } from "../Button/styles";
+
+import {
+  ContainerImg,
+  Content,
+  Img,
+  TextBox,
+  Title,
+  Text,
+  Buttons,
+  Link,
+  ContentIcon,
+} from "./styles";
 
 interface Props {
   project: any;
@@ -10,27 +22,24 @@ interface Props {
 
 export const ProjectItem = ({ project }: Props) => {
   return (
-    <Styles.Content>
-      <Styles.ContainerImg>
-        <Styles.Img src={project.imageURL}></Styles.Img>
-      </Styles.ContainerImg>
-
-      <Styles.TextBox>
-        <Styles.Title>{project.title}</Styles.Title>
-        <Styles.Text>{project.text}</Styles.Text>
-
-        <Styles.Buttons>
-          <Styles.Link target="_blank" href={project.link}>
+    <Content>
+      <ContainerImg>
+        <Img src={project.imageURL}></Img>
+      </ContainerImg>
+      <TextBox>
+        <Title>{project.title}</Title>
+        <Text>{project.text}</Text>
+        <Buttons>
+          <Link target="_blank" href={project.link}>
             <CardButton>ver projeto</CardButton>
-          </Styles.Link>  
-
-          <Styles.Link target="_blank" href={project.github}>
-            <Styles.ContentIcon>
-              <FaGithub color="#000000"/>  
-            </Styles.ContentIcon>
-          </Styles.Link>     
-        </Styles.Buttons>
-      </Styles.TextBox>
-    </Styles.Content>
+          </Link>
+          <Link target="_blank" href={project.github}>
+            <ContentIcon>
+              <FaGithub color="#000000" />
+            </ContentIcon>
+          </Link>
+        </Buttons>
+      </TextBox>
+    </Content>
   );
 };

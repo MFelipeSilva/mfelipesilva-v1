@@ -1,21 +1,20 @@
-import * as Styles from "./styles";
+import { CardCustom, ContainerImg, Icon, Img, Title, Text } from "./styles";
+
 import imgcontainer from "../../assets/imgcontainer.svg";
 
 interface Props {
-  skill: any
+  skill: any;
 }
 
 export const SkillItem = ({ skill }: Props) => {
   return (
-      <Styles.CardCustom>
-        <Styles.ContainerImg>
-          <Styles.Img src={imgcontainer}></Styles.Img>
-          <Styles.Icon src={skill.imageURL} />
-        </Styles.ContainerImg>
-        
-        <Styles.Title>{skill.title}</Styles.Title>
-
-        <Styles.Text>{skill.text}</Styles.Text>
-      </Styles.CardCustom>
-  )
+    <CardCustom>
+      <ContainerImg>
+        <Img src={imgcontainer}></Img>
+        <Icon src={skill.imageURL} />
+      </ContainerImg>
+      <Title>{skill.title}</Title>
+      <Text>{skill.text}</Text>
+    </CardCustom>
+  );
 };

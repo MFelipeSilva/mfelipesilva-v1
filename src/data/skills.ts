@@ -12,7 +12,7 @@ const skills = [
   },
   {
     id: "101056",
-    imageURL: logoreact ,
+    imageURL: logoreact,
     title: "ReactJS",
     text: "Um framework excelente para quem trabalha na áera do Frontend, você é capaz de criar interfaces ótimas e eficiente.",
   },

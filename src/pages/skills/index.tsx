@@ -1,21 +1,21 @@
-import * as Styles from "./styles";
+import { CardContent, Container, Img } from "./styles";
 
 import skills from "../../data/skills";
+
 import { SkillItem } from "../../components/Skill-item";
 
 import { TitleDefaulted } from "../../components/Title";
 
 export const Skills = () => {
   return (
-    <Styles.Container id="habilidades">
+    <Container id="habilidades">
       <TitleDefaulted text="Habilidades" />
-
-      <Styles.CardContent>
-        <Styles.Img></Styles.Img>
+      <CardContent>
+        <Img></Img>
         {skills.map((skill) => (
           <SkillItem skill={skill} key={skill.id} />
         ))}
-      </Styles.CardContent>
-    </Styles.Container>
+      </CardContent>
+    </Container>
   );
 };

@@ -1,15 +1,19 @@
-import React, { useEffect, useRef, useState } from "react";
-import useStoredState from "./hooks/useStoredState";
+import { useEffect, useState } from "react";
+
 import { ThemeProvider, DefaultTheme } from "styled-components";
+
+import useStoredState from "./hooks/useStoredState";
+
+import GlobalStyle from "./styles/global";
 
 import dark from "./styles/themes/dark";
 import light from "./styles/themes/light";
-import GlobalStyle from "./styles/global";
+
+import { Layout } from "./layout";
 
 import { NavBar } from "./components/Navbar";
-import { Layout } from "./layout";
+
 import { LoadingPageAnimate } from "./components/LoadingPageAnimate";
-import { Home } from "./pages/home";
 
 function App() {
   const [theme, setTheme] = useStoredState<DefaultTheme>("theme", dark);

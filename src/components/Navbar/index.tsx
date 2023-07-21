@@ -1,7 +1,11 @@
 import { useState, useContext } from "react";
-import logo from "../../assets/logoproject.svg";
+
 import Switch from "react-switch";
+
+import logo from "../../assets/logoproject.svg";
+
 import { ThemeContext } from "styled-components";
+
 import {
   NavigationBar,
   NavLinks,
@@ -11,8 +15,6 @@ import {
   MenuIcon,
   CloseIcon,
 } from "./styles";
-
-import { Link } from "react-router-dom";
 
 type Props = {
   toggleTheme(): void;
@@ -41,30 +43,23 @@ export const NavBar: React.FC<Props> = ({ toggleTheme }) => {
     <NavigationBar>
       <Img src={logo} alt="logoproject" />
       <MenuIcon SetDisplay={click[0]} onClick={switcherIcon} />
-
       <CloseIcon SetDisplay={click[1]} onClick={switcherIcon} />
-
       <NavLinks SetTransform={bar[1]} onClick={switcherIcon}>
         <Li>
           <Text href="#">Início</Text>
         </Li>
-
         <Li>
           <Text href="#sobre">Sobre</Text>
         </Li>
-
         <Li>
           <Text href="#habilidades">Habilidades</Text>
         </Li>
-
         <Li>
           <Text href="#projetos">Projetos</Text>
         </Li>
-
         <Li>
           <Text href="#contato">Contato</Text>
         </Li>
-
         <Switch
           onChange={toggleTheme}
           checked={typeTheme === "dark"}

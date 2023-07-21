@@ -1,12 +1,11 @@
-import React from 'react'
-import * as Styles from './styles'
+import { Container, ImgAnimate } from "./styles";
 
-import LogoAnimated from "../../assets/logo-animate.gif"
+import LogoAnimated from "../../assets/logo-animate.gif";
 
 export const LoadingPageAnimate = () => {
   return (
-    <Styles.Container>
-      <Styles.ImgAnimate src={LogoAnimated}/>
-    </Styles.Container>
-    )
-}
+    <Container>
+      <ImgAnimate src={LogoAnimated} />
+    </Container>
+  );
+};
