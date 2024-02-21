@@ -24,28 +24,25 @@ function App() {
     return setTheme(theme.typeTheme === "dark" ? light : dark);
   };
 
-  
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
       setScrollY("scroll");
     }, 2400);
   }, []);
-  
 
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
-        <GlobalStyle SetOverflow={scrollY}/>
-
-       {isLoading ? <LoadingPageAnimate /> : 
+      <div>
+        <GlobalStyle SetOverflow={scrollY} />
+        {isLoading ? (
+          <LoadingPageAnimate />
+        ) : (
           <header>
             <NavBar toggleTheme={toggleTheme} />
           </header>
-        }
-
-        {isLoading ? <LoadingPageAnimate   /> : <Layout />}
-        
+        )}
+        {isLoading ? <LoadingPageAnimate /> : <Layout />}
       </div>
     </ThemeProvider>
   );

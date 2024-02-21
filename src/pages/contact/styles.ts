@@ -1,16 +1,14 @@
 import styled from "styled-components";
 
-type PropsSize = {
-  FontWeight: string;
-  FontSize: string,
-};
-
-export const Container = styled.main`
+export const Container = styled.section`
   display: flex;
-  height: 80vh;
+  width: 100vw;
+  height: 100%;
+  padding: 15em 0;
+  gap: 10em;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 `;
 
 export const Content = styled.div`
@@ -26,11 +24,21 @@ export const Textbox = styled.div`
   flex-direction: column;
 `;
 
-export const Text = styled.text<PropsSize>`
+export const SubTitle = styled.p`
   font-family: Montserrat;
-  font-weight: ${( props ) => props.FontWeight};
-  font-size: ${( props ) => props.FontSize};
+  font-size: clamp(13px, 4vw, 24px);
+`;
+
+export const Title = styled.h1`
+  font-family: Montserrat;
+  font-size: clamp(18px, 5vw, 41px);
+  font-weight: 600;
   color: ${({ theme }) => theme.COLORS.PRIMARY};
+`;
+
+export const TextOr = styled.p`
+  font-family: Montserrat;
+  font-size: clamp(13px, 4vw, 24px);
 `;
 
 export const Icons = styled.div`

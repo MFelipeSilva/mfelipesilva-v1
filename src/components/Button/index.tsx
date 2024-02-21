@@ -1,10 +1,10 @@
 import { Container, CustomButton } from "./styles";
 
-type PropsText = {
+type ButtonProps = {
   label: string;
 };
 
-export const Button = ({ label }: PropsText) => {
+export const Button = ({ label }: ButtonProps) => {
   return (
     <Container>
       <CustomButton>{label}</CustomButton>

@@ -22,29 +22,24 @@ type Props = {
 
 export const NavBar: React.FC<Props> = ({ toggleTheme }) => {
   const { COLORS, typeTheme } = useContext(ThemeContext);
-  const [click, setClick] = useState(["flex", "none"]);
-  const [bar, setBar] = useState(["translateX(0)", "translateX(100%)"]);
 
-  function switcherIcon() {
-    const newClick = click.map((clicked) => {
-      return clicked === "flex" ? "none" : "flex";
-    });
-
-    const newBar = click.map((clicked) => {
-      return clicked === "none" ? "translateX(0)" : "translateX(100%)";
-    });
-
-    setBar(newBar);
-
-    setClick(newClick);
-  }
+  const [openMenu, setOpenMenu] = useState(false);
 
   return (
     <NavigationBar>
       <Img src={logo} alt="logoproject" />
-      <MenuIcon SetDisplay={click[0]} onClick={switcherIcon} />
-      <CloseIcon SetDisplay={click[1]} onClick={switcherIcon} />
-      <NavLinks SetTransform={bar[1]} onClick={switcherIcon}>
+
+      {!openMenu ? (
+        <MenuIcon onClick={() => setOpenMenu(!openMenu)} />
+      ) : (
+        <CloseIcon onClick={() => setOpenMenu(!openMenu)} />
+      )}
+
+      <NavLinks
+        className="responsive"
+        openMenu={openMenu}
+        onClick={() => setOpenMenu(false)}
+      >
         <Li>
           <Text href="#">Início</Text>
         </Li>

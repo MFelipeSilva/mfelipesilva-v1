@@ -1,19 +1,18 @@
-import { CardContent, Container, Img } from "./styles";
-
 import skills from "../../data/skills";
 
-import { SkillItem } from "../../components/Skill-item";
-
+import { CardSkill } from "../../components/CardSkill";
 import { TitleDefaulted } from "../../components/Title";
+
+import { CardContent, Container, Img } from "./styles";
 
 export const Skills = () => {
   return (
     <Container id="habilidades">
       <TitleDefaulted text="Habilidades" />
       <CardContent>
-        <Img></Img>
+        <Img />
         {skills.map((skill) => (
-          <SkillItem skill={skill} key={skill.id} />
+          <CardSkill skill={skill} key={skill.id} />
         ))}
       </CardContent>
     </Container>

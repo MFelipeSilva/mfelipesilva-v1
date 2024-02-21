@@ -1,8 +1,8 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 type Props = {
-  SetOverflow: string
-}
+  SetOverflow: string;
+};
 
 export default createGlobalStyle<Props>`
   * {
@@ -18,11 +18,7 @@ export default createGlobalStyle<Props>`
 
   body {
     overflow-x: hidden;
-    overflow-y: ${( props ) => props.SetOverflow};
+    overflow-y: ${({ SetOverflow }) => SetOverflow};
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
   }
-`;
-
-export const Section = styled.section`
-  height: 3000px;
 `;

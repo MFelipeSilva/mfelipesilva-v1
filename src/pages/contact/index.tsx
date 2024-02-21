@@ -1,8 +1,17 @@
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
-import { Container, Content, Textbox, Text, Icons, Links } from "./styles";
-
 import { TitleDefaulted } from "../../components/Title";
+
+import {
+  Container,
+  Content,
+  Textbox,
+  Icons,
+  Links,
+  SubTitle,
+  Title,
+  TextOr,
+} from "./styles";
 
 export const Contact = () => {
   return (
@@ -10,16 +19,10 @@ export const Contact = () => {
       <TitleDefaulted text="Contato" />
       <Content>
         <Textbox>
-          <Text FontSize="clamp(0.7em, 0.3em + 1vw, 2.5em)" FontWeight="">
-            Para contato, envie nesse e-mail
-          </Text>
-          <Text FontSize="clamp(0.8em, 0.8em + 1.5vw, 3em)" FontWeight="600">
-            silvaafelipe016@gmail.com
-          </Text>
+          <SubTitle>Para contato, envie nesse e-mail</SubTitle>
+          <Title>silvaafelipe016@gmail.com</Title>
         </Textbox>
-        <Text FontSize="clamp(0.7em, 0.3em + 1vw, 2.5em)" FontWeight="">
-          ou
-        </Text>
+        <TextOr>ou</TextOr>
         <Icons>
           <Links target="_blank" href="https://github.com/mfelipesilva/">
             <FaGithub fontSize={25} />

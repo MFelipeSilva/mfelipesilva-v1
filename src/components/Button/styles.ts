@@ -1,20 +1,20 @@
-import styled  from "styled-components";
+import styled from "styled-components";
 
-export const Container = styled.div`
-
-`
+export const Container = styled.div``;
 
 export const CustomButton = styled.button`
   display: flex;
   width: max(150px, 15vw);
   height: max(30px, 3vw);
   padding: max(17px, 1.5vw);
-  font-size: max(11px, 1vw);
+  font-size: max(11px, 0.8vw);
   align-items: center;
   justify-content: center;
-  letter-spacing: 2px;
   border: 2px solid #eec643;
   background-color: transparent;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  text-transform: uppercase;
   font-family: ${({ theme }) => theme.FONTS.RUBIK};
   color: ${({ theme }) => theme.COLORS.SECONDARY};
 
@@ -27,7 +27,7 @@ export const CustomButton = styled.button`
     cursor: pointer;
     color: ${({ theme }) => theme.COLORS.TERTIARY};
   }
-`
+`;
 export const CardButton = styled.button`
   display: flex;
   width: max(140px, 3.5vw);
@@ -41,13 +41,12 @@ export const CardButton = styled.button`
   border-radius: 5px;
   font-family: ${({ theme }) => theme.FONTS.RUBIK};
   color: ${({ theme }) => theme.COLORS.SECONDARY};
-  transition: all 0.40s ease-in;
-
+  transition: all 0.4s ease-in;
 
   &:hover {
     cursor: pointer;
     transform: translateY(-3px);
-    color: ${({ theme }) => theme.COLORS.TERTIARY};
+    color: ${({ theme }) => theme.COLORS.PRIMARY};
     background-color: ${({ theme }) => theme.COLORS.SECONDARY};
   }
-`
+`;

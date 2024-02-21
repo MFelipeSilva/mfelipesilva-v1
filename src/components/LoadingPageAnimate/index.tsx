@@ -1,6 +1,6 @@
-import { Container, ImgAnimate } from "./styles";
-
 import LogoAnimated from "../../assets/logo-animate.gif";
+
+import { Container, ImgAnimate } from "./styles";
 
 export const LoadingPageAnimate = () => {
   return (

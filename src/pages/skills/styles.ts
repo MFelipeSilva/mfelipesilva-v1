@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
-export const Container = styled.main`
+export const Container = styled.section`
   display: flex;
-  height: 100vh;
-  text-align: center;
+  width: 100vw;
+  height: 100%;
+  padding: 13em 0;
+  gap: 7em;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
 
   @media (max-width: 640px) {
     height: 1800px;
@@ -17,7 +19,7 @@ export const Container = styled.main`
 export const CardContent = styled.div`
   display: flex;
   width: 100vw;
-  margin-top: 100px;
+  gap: 3em;
   flex-flow: row wrap;
   justify-content: space-evenly;
 `;
@@ -25,4 +27,3 @@ export const CardContent = styled.div`
 export const Img = styled.img`
   position: absolute;
 `;
-

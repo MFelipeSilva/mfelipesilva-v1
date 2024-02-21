@@ -1,6 +1,6 @@
 import { Container, TitleHeader, Title } from "./styles";
 
-type PropsText = {
+type TitleDefaultedProps = {
   text: string;
 };
 
@@ -20,6 +20,6 @@ export const TitleHome = () => {
   );
 };
 
-export const TitleDefaulted = ({ text }: PropsText) => {
+export const TitleDefaulted = ({ text }: TitleDefaultedProps) => {
   return <Title>{text}</Title>;
 };
